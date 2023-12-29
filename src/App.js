@@ -8,7 +8,7 @@ function App() {
 
   const [searchData,setSearchData]=useState();
   return (
-    <div className="App">
+    <div>
       <Navbar searchData={searchData}/>
       <Hero/>
 
