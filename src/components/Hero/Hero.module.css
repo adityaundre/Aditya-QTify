@@ -6,9 +6,8 @@
     align-items: center;
     text-align: center;
     gap: 30px;
+    color: var(--color-white);
 
 }
-.heroContainer {
-    background-color: var(--color-black); /* Add your expected background color here */
-  }
-  
+
+
