@@ -8,7 +8,7 @@ const Card=({data,type})=>{
     const getCard=(type)=>{
         switch(type){
             case "album" : {
-                        const{likes,image,title,follows,slug,songs}=data;
+                        const{ likes,image,title,follows,slug,songs} = data;
 
                         return(
                             <Tooltip title={`${songs.length}songs`}placement="top" arrow>
