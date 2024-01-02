@@ -34,7 +34,7 @@ export const fetchNewAlbums = async() => {
 export const fetchSongs = async() => {
     try{
 
-        let res= await axios.get(`${BACKEND_ENDPOINT}/albums/songs`)
+        let res= await axios.get(`${BACKEND_ENDPOINT}/songs`)
         return res.data
 
 
@@ -47,7 +47,7 @@ export const fetchSongs = async() => {
 export const fetchFilters = async() => {
     try{
 
-        let res= await axios.get(`${BACKEND_ENDPOINT}/albums/genres`)
+        let res= await axios.get(`${BACKEND_ENDPOINT}/genres`)
         return res.data
 
 

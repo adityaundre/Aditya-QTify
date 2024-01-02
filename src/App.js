@@ -21,7 +21,7 @@ function App() {
   useEffect(()=>{
     generateData("topAlbums", fetchTopAlbums);
     generateData("newAlbums", fetchNewAlbums);
-    //generateData("songs", fetchSongs)
+    generateData("songs", fetchSongs);
   },[]);
 
   const{topAlbums=[], newAlbums=[], songs=[] }= data;

@@ -5,13 +5,15 @@ import { Link } from "react-router-dom";
 
 
 const Card=({data,type})=>{
+    
     const getCard=(type)=>{
         switch(type){
             case "album" : {
-                        const{ likes,image,title,follows,slug,songs} = data;
+                        const{ image,title,follows,slug,songs} = data;
+                        const songsLength = songs ? songs.length : 0;
 
                         return(
-                            <Tooltip title={`${songs.length}songs`}placement="top" arrow>
+                            <Tooltip title={`${songsLength}songs`}placement="top" arrow>
                                 <Link to={`/album/${slug}`}>
                                         <div className={styles.wrapper}>
                                             <div className={styles.card}>
